@@ -1,0 +1,22 @@
+<form method="POST" action="/pizzas"> <!-- tell the form to POST to /pizzas when the order button is pressed -->
+  <label for="first-name">First Name:</label> 
+  <!-- for="" must match id for input, clicking the label will activat ethe input.  ID can be anything, though it should describe what's being input.  IDs usually use dashes instead of underscores -->
+  <input type="text" id="first-name" name="first_name"/> 
+  <!-- name="something", something should match the name of a column in the database -->
+  <label for="last-name">Last Name:</label>
+  <input type="text" id="last-name" name="last_name"/>
+
+  <label for="pizza-select">Select Pizza</label>
+  <select id="pizza-select" name="topping"> <!-- makes a drop down box -->
+    <option value="Margherita">Margherita</option> 
+    <!--value will be the input, it's the data we want, text between tags will be visible to pick.  Could be generated from the database by a loop -->
+    <option value="Calzone">Calzone</option>
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input min="1" step="1" type="number" name="quantity" id="quantity"/>
+  <!-- min and step set minimum of 1 and prevent decimals.  Good for users, still need to ckeck inputs since this is easy to get around and give negative inputs -->
+
+  <input type="submit" value="Order Pizza"/> <!-- the thing you want to appear on the button goes in value -->
+
+</form>

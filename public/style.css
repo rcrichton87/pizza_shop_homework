@@ -1,0 +1,16 @@
+body {
+    background-color: Linen;
+}
+
+form {
+  border: 3px solid burlywood;
+  border-radius: 5px;
+  font-size: : 18px; 
+  font-family: "Arial";
+  width: 150px;
+}
+
+p {
+  font-family: Georgia;
+  font-color: darkslategrey;
+}
